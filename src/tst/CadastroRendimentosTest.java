@@ -27,6 +27,11 @@ class CadastroRendimentosTest {
 		assertEquals(6000, irpf.getTotalSalario(), 0);
 	}
 	
-	
+	@Test
+	public void testCadastrarSalario3() {
+		irpf.cadastrarSalario(5000);
+		irpf.cadastrarSalario(6000);
+		assertEquals(11000, irpf.getTotalSalario(), 0);
+	}
 
 }
