@@ -2,7 +2,7 @@ package app;
 
 public class IRPF {
 	
-	float salario;
+	private float salario;
 		
 	public void cadastrarSalario(float salario) {
 		this.salario = salario;

@@ -1,7 +1,7 @@
 package tst;
 
 import static org.junit.jupiter.api.Assertions.*;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import app.IRPF;
@@ -10,7 +10,7 @@ class CadastroRendimentosTest {
 	
 	private IRPF irpf;
 	
-	@Before
+	@BeforeEach
 	public void setup() {
 		irpf = new IRPF();
 	}
@@ -19,6 +19,12 @@ class CadastroRendimentosTest {
 	public void testCadastrarSalario() {
 		irpf.cadastrarSalario(5000);
 		assertEquals(5000, irpf.getTotalSalario(), 0);
+	}
+	
+	@Test
+	public void testCadastrarSalario2() {
+		irpf.cadastrarSalario(6000);
+		assertEquals(6000, irpf.getTotalSalario(), 0);
 	}
 	
 	
