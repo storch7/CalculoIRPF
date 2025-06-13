@@ -10,6 +10,6 @@ public class IRPF {
 	}
 	
 	public float getTotalSalario() {
-		return 5000; //retorno pela técnica de falsicação
+		return this.salario;
 	}
 }
