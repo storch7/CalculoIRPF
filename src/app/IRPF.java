@@ -5,6 +5,10 @@ public class IRPF {
 	private float salario;
 	private float contribuicaoPrevidenciaria;
 	private String[] dependentes;
+	
+	public IRPF() {
+		dependentes = new String[0];
+	}
 		
 	public void cadastrarSalario(float salario) {
 		this.salario += salario;
@@ -34,5 +38,16 @@ public class IRPF {
 		
 		//Atualizar referencias do vetor de dependentes
 		dependentes = temp;
+	}
+	
+	public float getDeducaoDependentes() {
+		if(dependentes.length == 1) {
+			return 189.59f;
+		}
+		
+		else if(dependentes.length > 1) {
+			return 379.18f; //falsificação / duplicação
+		}
+		else return 0;
 	}
 }

@@ -7,15 +7,25 @@ import org.junit.jupiter.api.Test;
 import app.IRPF;
 
 class CadastroDependentesTest {
+	
 	private IRPF irpf;
 	
 	@BeforeEach
-	irpf = new IRPF();
+	public void setup() {
+		irpf = new IRPF();		
+	}
 	
 	@Test
-	void testCadastrarUmDepentente() {
+	public void testCadastrarUmDepentente() {
 		irpf.cadastrarDependente("Joao");
-		assertEquals(189.59, irpf.getDeducapDependentes(), 0);
+		assertEquals(189.59f, irpf.getDeducaoDependentes(), 0);
+	}
+	
+	@Test
+	public void testCadastrarDoisDepentente() {
+		irpf.cadastrarDependente("Joao");
+		irpf.cadastrarDependente("Maria");
+		assertEquals(2*189.59f, irpf.getDeducaoDependentes(), 0);
 	}
 
 }
