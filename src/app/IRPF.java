@@ -7,7 +7,6 @@ public class IRPF {
 		
 	public void cadastrarSalario(float salario) {
 		this.salario += salario;
-		
 	}
 	
 	public float getTotalSalario() {

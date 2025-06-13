@@ -1,5 +1,5 @@
 -Cadastrar deduções
-	- Previdencia Oficial
+	OK Previdencia Oficial
 	- Dependentes
 	- Pensao alimentícia
 	- Outras deduções
