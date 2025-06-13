@@ -1,0 +1,18 @@
+- Cadastrar rendimentos
+
+
+
+
+- Calcular total de rendimentos
+
+-Cadastrar deduções
+	- Previdencia Oficial
+	- Dependentes
+	- Pensao alimentícia
+	- Outras deduções
+	
+- Calcular base de cálculo
+
+- Calcular imposto de renda por faixas
+
+- Calcular alíquota efetiva
